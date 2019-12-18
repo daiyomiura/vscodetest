@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>React Todo App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        (() => {
+            class App extends React.Component {
+                render() {
+                    return (
+                        <div>
+                            <h1>My Todos</h1>
+                        </div>
+                    );
+                }
+            }
+
+            ReactDOM.render(
+                <App/>,
+                document.getElementById('root')
+            );
+        })();   // 最後の()を忘れると描画されないので注意！
+    </script>
+</body>
+</html>
