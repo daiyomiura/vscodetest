@@ -1,0 +1,12 @@
+GET http://localhost:8080/DemoWebApp/api/shop/ShopInfo
+
+###
+
+POST http://localhost:8080/DemoWebApp/api/shop/ShopInfo
+content-type: application/json
+
+{"shopNo":101,"shopName":"東京本店","address":"東京都中央区八丁堀"}
+
+###
+
+GET http://localhost:8080/DemoWebApp/api/sales/SalesList
